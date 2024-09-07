@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(to bottom, #FFB6C1, #FF69B4);
+}
+
+.gameContainer {
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 300px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #FF6347;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #FFD700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 80px;
+    font-size: 2rem;
+    color: #4B0082;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #F0E68C;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+#statusText {
+    font-size: 1.5rem;
+    color: #32CD32;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#restartBtn {
+    padding: 10px 30px;
+    background: linear-gradient(to right, #FF4500, #FF6347);
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#restartBtn:hover {
+    background: linear-gradient(to right, #FF6347, #FF4500);
+    transform: scale(1.05);
+}
